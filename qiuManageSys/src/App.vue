@@ -4,7 +4,7 @@
  * @Author: JnannJ
  * @Date: 2023-10-20 16:06:56
  * @LastEditors: JnannJ
- * @LastEditTime: 2023-10-20 18:12:26
+ * @LastEditTime: 2023-10-23 11:45:20
 -->
 <template>
   <el-config-provider :locale="zhCn">
@@ -19,5 +19,4 @@ import zhCn from 'element-plus/es/locale/lang/zh-cn';
 
 <style>
 @import './assets/css/main.css';
-@import './assets/css/color-dark.css';
 </style>

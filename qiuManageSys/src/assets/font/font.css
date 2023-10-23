@@ -1,0 +1,19 @@
+@font-face {
+    font-family: "TitilliumWeb";
+    src: url('./TitilliumWeb-Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: "alibb";
+    src: url('./AlibabaPuHuiTi-3-55-RegularL3.ttf');
+    font-weight: normal;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: "cat";
+    src: url('./cat.ttf');
+    font-weight: normal;
+    font-style: normal;
+  }
