@@ -127,7 +127,7 @@ const sidedbar = useSidebar();
  
  
 }
- .el-sub-menu__title{
+:deep() .el-sub-menu__title{
   font-size: 16px !important;
 }
 

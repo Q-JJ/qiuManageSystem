@@ -4,7 +4,7 @@
  * @Author: JnannJ
  * @Date: 2023-10-20 18:42:25
  * @LastEditors: JnannJ
- * @LastEditTime: 2023-10-22 19:28:54
+ * @LastEditTime: 2023-10-25 17:30:41
  */
 import { createRouter, createWebHashHistory, RouteRecordRaw } from "vue-router";
 import Home from "../layout/home.vue";
@@ -39,7 +39,14 @@ const routes:Array<RouteRecordRaw> = [
       { path: "/about", component: About },
     ],
   },
-  
+  {
+    path: '/login',
+    name: 'Login',
+    meta: {
+        title: '登录',
+    },
+    component: () => import(/* webpackChunkName: "login" */ '../views/login.vue'),
+},
 ];
 
 const router = createRouter({
@@ -49,7 +56,7 @@ const router = createRouter({
 });
 router.beforeEach((to, from, next) => {
   document.title = `${to.meta.title} | 湫`;
-  const role = (localStorage.getItem('ms_username'))?"admin":"QJJ";
+  const role = (localStorage.getItem('ms_username'))?"admin":null;
   console.log('to :>> ', to);
   if (!role && to.path !== '/login') {
       next('/login');
